@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="jscalculator.js"></script>
+
+
+<body>
+    <div class="calbody"> 
+        <div class="bar"> 
+            <input type="text" id="result" disabled placeholder="0" value="0"disabled>
+        </div>
+
+        <div class="buttons">
+            <input type="button" class="opr-btn" value="C" onclick="clearInput()">
+            <input type="button" class="opr-btn" value="DEL" onclick="deleteone()">
+            <input type="button" class="opr-btn" value="%" onclick="percent()">
+            <input type="button" class="opr-btn" value="/" onclick="devide()">
+        </div>
+
+        <div class="buttons">
+            <input type="button" class="num-btn" value="7" onclick="appendNumber(7)">
+            <input type="button" class="num-btn" value="8" onclick="appendNumber(8)">
+            <input type="button" class="num-btn" value="9" onclick="appendNumber(9)">
+            <input type="button" class="opr-btn" value="+" onclick="add()">
+        </div>
+
+        <div class="buttons">
+            <input type="button" class="num-btn" value="4" onclick="appendNumber(4)">
+            <input type="button" class="num-btn" value="5" onclick="appendNumber(5)">
+            <input type="button" class="num-btn" value="6" onclick="appendNumber(6)">
+            <input type="button" class="opr-btn" value="-" onclick="minus()">
+        </div>
+
+        <div class="buttons">
+            <input type="button" class="num-btn" value="1" onclick="appendNumber(1)">
+            <input type="button" class="num-btn" value="2" onclick="appendNumber(2)">
+            <input type="button" class="num-btn" value="3" onclick="appendNumber(3)">
+            <input type="button" class="opr-btn" value="*" onclick="multiply()">
+        </div>
+
+        <div class="buttons">
+            <input type="button" class="dot-btn" value="." onclick="appendNumber('.')">
+            <input type="button" class="num-btn" value="0" onclick="appendNumber(0)">
+            <input type="button" class="equal-btn" value="=" onclick="calculate()">
+          
+        </div>
+
+    </div>
+   
+
+    
+</body>
+</html>
